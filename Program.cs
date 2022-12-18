@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Diagnostics;
 
-namespace FastMassPing
+namespace FastMassPingV2
 {
     class Program
     {
@@ -15,8 +15,7 @@ namespace FastMassPing
         {
             if (freeLine)
                 Console.WriteLine();
-            Console.WriteLine("FastMassPing.exe            The fastest ping in the west        May contain 'peanuts'");
-            Console.WriteLine();
+            Console.WriteLine("FastMassPingV2.exe The fastest ping");
             Console.WriteLine("Avaliable Parameters");
             Console.WriteLine("--help           Displays this help");
             Console.WriteLine("--start-ip       First IP adress                      Mandatory");
@@ -25,14 +24,12 @@ namespace FastMassPing
             Console.WriteLine("--timeout        Timeout in milliseconds              Default: 1000    Minimum: 0");
             Console.WriteLine("--threads        Number of threads to use             Default: 16      Minimum: 2");
             Console.WriteLine("--output         File to write found addresses to     Default: None");
-            Console.WriteLine();
             Console.WriteLine("Use of a proxy or vpn is recommended.");
             Console.WriteLine("If no output file is specified found IPs will be displayed in the console.");
-            Console.WriteLine();
             Console.WriteLine("Warning: Use of 128 threads or more can lead to serious internet performance");
-            Console.WriteLine("          issues not just for the machine running this program but for the");
-            Console.WriteLine("          entire network sharing the same router. Please set appropriate");
-            Console.WriteLine("          values that you know your network can handle.");
+            Console.WriteLine("         issues not just for the machine running this program but for the");
+            Console.WriteLine("         entire network sharing the same router. Please set appropriate");
+            Console.WriteLine("         values that you know your network can handle.");
             return;
         }
 
